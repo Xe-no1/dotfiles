@@ -1,0 +1,21 @@
+current directory: /Users/mazentech/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/jaro_winkler-1.6.0/ext/jaro_winkler
+/Users/mazentech/.rbenv/versions/3.3.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/mazentech/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/jaro_winkler-1.6.0/ext/jaro_winkler
+make DESTDIR\= sitearchdir\=./.gem.20240921-65998-p5flcz sitelibdir\=./.gem.20240921-65998-p5flcz clean
+
+current directory: /Users/mazentech/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/jaro_winkler-1.6.0/ext/jaro_winkler
+make DESTDIR\= sitearchdir\=./.gem.20240921-65998-p5flcz sitelibdir\=./.gem.20240921-65998-p5flcz
+compiling adj_matrix.c
+compiling codepoints.c
+compiling jaro.c
+compiling jaro_winkler.c
+linking shared-object jaro_winkler/jaro_winkler_ext.bundle
+
+current directory: /Users/mazentech/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/jaro_winkler-1.6.0/ext/jaro_winkler
+make DESTDIR\= sitearchdir\=./.gem.20240921-65998-p5flcz sitelibdir\=./.gem.20240921-65998-p5flcz install
+/opt/homebrew/bin/ginstall -c -m 0755 jaro_winkler_ext.bundle ./.gem.20240921-65998-p5flcz/jaro_winkler
+
+current directory: /Users/mazentech/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/jaro_winkler-1.6.0/ext/jaro_winkler
+make DESTDIR\= sitearchdir\=./.gem.20240921-65998-p5flcz sitelibdir\=./.gem.20240921-65998-p5flcz clean

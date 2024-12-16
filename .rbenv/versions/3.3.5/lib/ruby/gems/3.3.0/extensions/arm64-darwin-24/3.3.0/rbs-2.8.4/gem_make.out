@@ -1,0 +1,27 @@
+current directory: /Users/mazentech/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/rbs-2.8.4/ext/rbs_extension
+/Users/mazentech/.rbenv/versions/3.3.5/bin/ruby extconf.rb
+checking for whether -std=gnu99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /Users/mazentech/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/rbs-2.8.4/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20240921-65998-s8diel sitelibdir\=./.gem.20240921-65998-s8diel clean
+
+current directory: /Users/mazentech/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/rbs-2.8.4/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20240921-65998-s8diel sitelibdir\=./.gem.20240921-65998-s8diel
+compiling constants.c
+compiling lexer.c
+compiling lexstate.c
+compiling location.c
+compiling main.c
+compiling parser.c
+compiling parserstate.c
+compiling ruby_objs.c
+compiling unescape.c
+linking shared-object rbs_extension.bundle
+
+current directory: /Users/mazentech/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/rbs-2.8.4/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20240921-65998-s8diel sitelibdir\=./.gem.20240921-65998-s8diel install
+/opt/homebrew/bin/ginstall -c -m 0755 rbs_extension.bundle ./.gem.20240921-65998-s8diel
+
+current directory: /Users/mazentech/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/rbs-2.8.4/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20240921-65998-s8diel sitelibdir\=./.gem.20240921-65998-s8diel clean
