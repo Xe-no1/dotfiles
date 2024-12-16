@@ -1,0 +1,87 @@
+shell_integration enabled
+macos_option_as_alt yes
+macos_quit_when_last_window_closed yes
+confirm_os_window_close 0
+placement_strategy center
+#window_margin_width 0
+#window_padding_width 1 5 0 6
+
+macos_titlebar_color background
+
+repaint_delay 0
+
+sync_to_monitor no
+
+enable_audio_bell no
+
+placement_strategy center
+
+window_logo_path /Users/mazentech/.config/kitty/kitty.icns
+
+tab_bar_margin_height 2.0 2.0
+
+#hide_window_decorations titlebar-and-corners
+
+symbol_map U+276f JetBrains Mono
+
+font_family      JetBrainsMonoNL Nerd Font Mono
+bold_font        SF Mono
+italic_font      SF Mono
+bold_italic_font SF Mono
+
+font_size 18.0
+
+disable_ligatures always
+# cursor #ffffff
+# cursor_text_color background
+cursor_shape beam
+cursor_blink_interval -1
+
+scrollback_lines -1
+
+copy_on_select no
+
+tab_bar_edge top
+tab_bar_style custom
+tab_bar_margin_width 0.0
+tab_bar_margin_height 0.0 0.0
+tab_title_template "{fmt.fg.red}{bell_symbol}{activity_symbol}{fmt.fg.tab}{index}: {title}"
+
+# Base Colors
+# foreground              #ffffff
+# background              #232323
+# active_tab_foreground   #d3d7cf
+# active_tab_background   #393939
+active_tab_font_style   normal
+# inactive_tab_foreground #d3d7cf
+# inactive_tab_background #181818
+# tab_bar_background      #393939
+# tab_bar_margin_color    #232323
+# selection_foreground none
+# selection_background #7f7f7f
+
+# ANSI Normal
+# color0 #181818
+# color1 #ac4242
+# color2 #90a959
+# color3 #f4bf75
+# color4 #6a9fb5
+# color5 #aa759f
+# color6 #75b5aa
+# color7 #d8d8d8
+
+# ANSI Bright
+# color8 #1e1e1e
+# color9 #c55555
+# color10 #aac474
+# color11 #feca88
+# color12 #82b8c8
+# color13 #c28cb8
+# color14 #93d3c3
+# color15 #f8f8f8
+
+
+# BEGIN_KITTY_THEME
+# Nord
+include current-theme.conf
+# END_KITTY_THEME

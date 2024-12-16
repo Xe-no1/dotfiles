@@ -1,0 +1,50 @@
+[env]
+TERM = "xterm-256color"
+
+option_as_alt = "Both"
+
+[font]
+normal = { family = "SFMono Nerd Font Mono", style = "Regular" }
+#bold = { family = "SF Mono", style = "Bold" }
+size = 12
+
+[window]
+startup_mode = "Maximized"
+dynamic_padding = true
+padding = { x = 4, y = 3 }
+option_as_alt = "Both"
+
+[colors]
+draw_bold_text_with_bright_colors = true
+cursor = { text = "CellForeground", cursor = "#FFFFFF" }
+selection = { text = "CellForeground", background = "#7F7F7F" }
+
+[colors.primary]
+background = "#232323"
+
+[colors.normal]
+black = "#181818"
+red = "#c55555"
+green = "#aac474"
+yellow = "#f4bf75"
+blue = "#7db2f4"
+magenta = "#c28cb8"
+cyan = "#93d3c3"
+white = "#f8f8f8"
+
+[colors.bright]
+black = "#181818"
+red = "#c55555"
+green = "#aac474"
+yellow = "#f4bf75"
+blue = "#7db2f4"
+magenta = "#c28cb8"
+cyan = "#acf3f3"
+white = "#f8f8f8"
+
+[cursor]
+style = { shape = "Beam", blinking = "Always" }
+blink_interval = 600
+
+[scrolling]
+multiplier = 1

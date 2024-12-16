@@ -1,0 +1,143 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5",
+  "schemes" : [
+    {
+      "buttons" : {
+        "universalBackForward" : true
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x30fa",
+          "productName" : "USB OPTICAL MOUSE ",
+          "category" : "mouse",
+          "productID" : "0x400"
+        }
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "distance" : {
+          "vertical" : 5
+        },
+        "speed" : {
+          "vertical" : 0
+        }
+      },
+      "pointer" : {
+        "speed" : 0.0689655172413792768,
+        "acceleration" : 3,
+        "disableAcceleration" : false
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
+          "productID" : "0x342",
+          "category" : "trackpad",
+          "vendorID" : "0x5ac"
+        }
+      },
+      "pointer" : {
+        "speed" : 0.0797
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : false
+        }
+      }
+    },
+    {
+      "pointer" : {
+        "speed" : 0.08
+      },
+      "if" : {
+        "device" : {
+          "productName" : "CORSAIR HARPOON RGB PRO Gaming Mouse",
+          "serialNumber" : "06005016AF8818E2602FC1ABF5001C02",
+          "productID" : "0x1b75",
+          "category" : "mouse",
+          "vendorID" : "0x1b1c"
+        }
+      },
+      "scrolling" : {
+        "speed" : {
+          "vertical" : 0
+        },
+        "reverse" : {
+          "vertical" : true
+        },
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "distance" : {
+          "vertical" : 3
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productName" : "Razer DeathAdder V2",
+          "productID" : "0x84",
+          "vendorID" : "0x1532"
+        }
+      },
+      "buttons" : {
+        "universalBackForward" : true
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
+        "speed" : {
+          "vertical" : 0
+        },
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "acceleration" : {
+          "vertical" : 1
+        }
+      },
+      "pointer" : {
+        "speed" : 0.0706
+      }
+    },
+    {
+      "pointer" : {
+        "speed" : 0.003
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : false
+        },
+        "distance" : {
+          "vertical" : "59.3px"
+        },
+        "speed" : {
+          "vertical" : 0
+        },
+        "acceleration" : {
+          "vertical" : 1
+        }
+      },
+      "if" : {
+        "device" : {
+          "productID" : "0xfa7c",
+          "vendorID" : "0x25a7",
+          "productName" : "X2 Wireless",
+          "category" : "mouse"
+        }
+      },
+      "buttons" : {
+        "universalBackForward" : true
+      }
+    }
+  ]
+}

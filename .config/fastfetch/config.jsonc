@@ -1,0 +1,262 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "small",
+    "color": {
+      "1": "bright_white",
+      "2": "bright_white",
+      "3": "bright_white",
+      "4": "bright_white",
+      "5": "bright_white",
+      "6": "bright_white",
+      "7": "bright_white",
+      "8": "bright_white",
+      "9": "bright_white",
+    },
+    "padding": { "top": 6 },
+  },
+  "display": {
+    "separator": "",
+    "key": {
+      "width": 20,
+    },
+    "color": {
+      "keys": "bright_yellow",
+    },
+    "constants": [
+      // CONSTANT {$1} - COLOR BACKGROUND FOR KEY
+      "\u001b[48;2;43;43;69m",
+      // CONSTANT {$2} - COLOR BACKGROUND FOR OUTPUT
+      "\u001b[48;2;56;59;78m",
+      // CONSTANT {$3} - VERTICAL BARS AT START AND 75th CHARACTERS FORWARD AND BACKWARD
+      "                               │\u001b[34D\u001b[39m",
+    ],
+  },
+  "modules": [
+    {
+      "key": "╭─────────────────────SW Info─────────────────────╮",
+      "type": "custom",
+      "keyColor": "bright_white",
+    },
+    {
+      "key": "{#bright_white}│ {#bright_yellow}\uf2bd {#bright_cyan}User      {#keys}",
+      "type": "title",
+      "format": "{$3}{1}",
+    },
+    {
+      "key": "{#bright_white}│ {#bright_yellow}\udb86\udee0 {#bright_cyan}Uptime    {#keys}",
+      "type": "uptime",
+      "format": "{$3}{1}D {2}H {3}M",
+    },
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\ueb70 {#bright_cyan}BootLdr     {#keys}",
+    //"type": "bios",
+    //"format": "{$3}iBoot {4}",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\uf013 {#bright_cyan}Kernel      {#keys}",
+    //"type": "command",
+    //"text": "/Users/mazentech/.local/bin/script.sh",
+    //"format": "{$3}XNU {1}",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\ue690 {#bright_cyan}InitSys     {#keys}",
+    //"type": "initsystem",
+    //"format": "{$3}{1} {version}",
+    //},
+    {
+      "key": "{#bright_white}│ {#bright_yellow}{icon} {#bright_cyan}OperSys   {#keys}",
+      "type": "os",
+      "format": "{$3}{3} {version} ({10})",
+    },
+    {
+      "key": "{#bright_white}│ {#bright_yellow}\uf120 {#bright_cyan}Shell     {#keys}",
+      "type": "shell",
+      "format": "{$3}{3} {4}",
+    },
+    {
+      "key": "{#bright_white}│ {#bright_yellow}\ue795 {#bright_cyan}Terminal  {#keys}",
+      "type": "terminal",
+      "format": "{$3}{5} {version}",
+    },
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\uf2d2 {#bright_cyan}WinMgr      {#keys}",
+    //"type": "wm",
+    //"format": "{$3}{2} {3}",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\udb82\ude07 {#bright_cyan}DeskEnv     {#keys}",
+    //"type": "de",
+    //"format": "{$3}{2} {3}",
+    //},
+    {
+      "key": "{#bright_white}│ {#bright_yellow}\udb80\udfd3 {#bright_cyan}Packages  {#keys}",
+      "type": "packages",
+      "format": "{$3}brew: {37}",
+    },
+    {
+      "key": "{#bright_white}│ {#bright_yellow}\udb84\udf78 {#bright_cyan}FetchVer  {#keys}",
+      "type": "version",
+      "format": "{$3}{2}{3}",
+    },
+    {
+      "key": "├─────────────────────HW Info─────────────────────┤",
+      "type": "custom",
+      "keyColor": "bright_white",
+    },
+    {
+      "key": "{#bright_white}│ {#bright_yellow}\udb82\udeab {#bright_cyan}Machine   {#keys}",
+      "type": "host",
+      "format": "{$3}{2} {3}",
+    },
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\uf4bc {#bright_cyan}CPU         {#keys}",
+    //"type": "cpu",
+    //"showPeCoreCount": true,
+    //"format": "{$3}{1}, 6P cores + 2E cores, {7}",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\udb81\ude1a {#bright_cyan}GPU         {#keys}",
+    //"type": "gpu",
+    //"format": "{$3}{2}, {5} cores, {12}",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\uefc5 {#bright_cyan}Memory      {#keys}",
+    //"type": "physicalmemory",
+    //"format": "{$3}{8} {5}, {2}",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\ue706 {#bright_cyan}Disk        {#keys}",
+    //"type": "physicaldisk",
+    //"format": "{$3}{2}, {1}",
+    //},
+    {
+      "key": "{#bright_white}│ {#bright_yellow}\uf240 {#bright_cyan}Battery   {#keys}",
+      "type": "battery",
+      "format": "{$3}{7} Cycles",
+    },
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\udb80\udf79 {#bright_cyan}Monitor     {#keys}",
+    //"type": "monitor",
+    //"format": "{$3}{2} x {3}, {6} inch, {7} ppi, 120Hz",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\uefba {#bright_cyan}Mouse       {#keys}",
+    //"type": "command",
+    //"text": "/Users/mazentech/.local/bin/usbness.sh",
+    //"format": "{$3}Apple trackpad, {1}",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\udb80\udf0c {#bright_cyan}Keyboard    {#keys}",
+    //"type": "uptime",
+    //"format": "{$3}Apple keyboard",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\uf028 {#bright_cyan}Speakers    {#keys}",
+    //"type": "sound",
+    //"format": "{$3}{2}",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\udb81\udda0 {#bright_cyan}Camera      {#keys}",
+    //"type": "camera",
+    //"format": "{$3}{1}, {5} x {6}, {3}",
+    //},
+    {
+      "key": "{#bright_white}│ {#bright_yellow}\udb85\udc0b {#bright_cyan}Charge    {#keys}",
+      "type": "poweradapter",
+      "format": "{$3}{1}W Input",
+    },
+    //{
+    //"key": "├──────────────────────WWW Connection Information──────────────────────┤",
+    //"type": "custom",
+    //"keyColor": "bright_white",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\udb80\udf18 {#bright_cyan}Status      {#keys}",
+    //"type": "command",
+    //"text": "/Users/mazentech/.local/bin/internet.sh",
+    //"format": "{$3}{1}",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\udb83\udf94 {#bright_cyan}PIP         {#keys}",
+    //"type": "publicip",
+    //"format": "{$3}{1}, {2}",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\udb81\udef3 {#bright_cyan}LIP         {#keys}",
+    //"type": "localip",
+    //"format": "{$3}{1}",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\udb80\uddd6 {#bright_cyan}DNS         {#keys}",
+    //"type": "dns",
+    //"showType": "both",
+    //"format": "{$3}{1}",
+    //},
+    {
+      "key": "├───────────────────Config Info───────────────────┤",
+      "type": "custom",
+      "keyColor": "bright_white",
+    },
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\uf1ab {#bright_cyan}Locale      {#keys}",
+    //"type": "locale",
+    //"format": "{$3}{1}",
+    //},
+    {
+      "key": "{#bright_white}│ {#bright_yellow}\udb83\ude51 {#bright_cyan}Display   {#keys}",
+      "type": "display",
+      "format": "{$3}Scale: {4} x {5}, RR: {3}Hz",
+    },
+    {
+      "key": "{#bright_white}│ {#bright_yellow}\uf0ac {#bright_cyan}Timezone  {#keys}",
+      "type": "datetime",
+      "format": "{$3}UTC{21}",
+    },
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\uf1fc {#bright_cyan}Theme       {#keys}",
+    //"type": "wmtheme",
+    //"format": "{$3}{1}",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\ue659 {#bright_cyan}Typeface    {#keys}",
+    //"type": "font",
+    //"format": "{$3}System - {1}, User - {2}",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\uf245 {#bright_cyan}Cursor      {#keys}",
+    //"type": "cursor",
+    //"format": "{$3}{1}, {2} x {2} px",
+    //},
+    //{
+    //"key": "{#bright_white}│ {#bright_yellow}\uf03e {#bright_cyan}Wallpaper   {#keys}",
+    //"type": "wallpaper",
+    //"format": "{$3}{2}",
+    //},
+    {
+      "key": "{#bright_white}│ {#bright_yellow}\uf031 {#bright_cyan}TermFont  {#keys}",
+      "type": "terminalfont",
+      "format": "{$3}{2} {3}",
+    },
+    {
+      "key": "{#bright_white}│ {#bright_yellow}\udb83\udc8f {#bright_cyan}TermSize  {#keys}",
+      "type": "terminalsize",
+      "format": "{$3}{columns}C x {rows}R ({width}px x {height}px)",
+    },
+    {
+      "key": "{#bright_white}│ {#bright_yellow}\udb80\udf01 {#bright_cyan}TermTheme {#keys}",
+      "type": "terminaltheme",
+      "format": "{$3}FG: {1}, BG: {3} (Nord)",
+    },
+    {
+      "key": "╰─────────────────────────────────────────────────╯",
+      "type": "custom",
+      "keyColor": "bright_white",
+    },
+    //{
+    //"key": " ",
+    //"type": "custom",
+    //"format": "                  {#30}█{#90}█{#31}█{#91}█{#32}█{#92}█{#33}█{#93}█{#34}█{#94}█{#35}█{#95}█{#36}█{#96}█{#37}█{#97}█",
+    //},
+  ],
+}
