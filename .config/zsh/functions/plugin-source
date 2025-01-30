@@ -1,0 +1,11 @@
+function plugin-source {
+  local plugdir initfile
+  ZPLUGINDIR=${ZPLUGINDIR:-${ZDOTDIR:-$HOME/.config/zsh}/plugins}
+  for plugdir in $@; do
+    [[ $plugdir = /* ]] || plugdir=$ZPLUGINDIR/$plugdir
+    fpath+=$plugdir
+    initfile=$plugdir/${plugdir:t}.plugin.zsh
+    initfile2=$plugdir/${plugdir:t}.zsh-theme
+    (( $+functions[zsh-defer] )) && zsh-defer . $initfile &> /dev/null || . $initfile &> /dev/null || . $initfile2
+  done
+}

@@ -1,0 +1,13 @@
+function plugin-clean {
+  local plug=()
+  ZPLUGINDIR=${ZPLUGINDIR:-${ZDOTDIR:-$HOME/.config/zsh}/plugins}
+  plug=($@:t)
+  for dir in $ZPLUGINDIR/*/; do
+    minidir=${dir:t}
+    if [[ ${plug[@]} =~ $minidir ]]; then
+      continue
+    else
+      rm -rf $dir
+    fi
+  done
+}
