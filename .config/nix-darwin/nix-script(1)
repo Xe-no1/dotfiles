@@ -1,0 +1,7 @@
+#!/bin/zsh
+darwin-rebuild switch --flake ~/.config/nix-darwin
+output=`(cd ~/.config/nix-darwin && nix flake update | wc -l)`
+if [ $output -gt 0 ];
+then echo "rebuilding again because of update" 
+darwin-rebuild switch --flake ~/.config/nix-darwin;
+fi
