@@ -1,0 +1,4 @@
+addText () {
+    text_to_add="  "
+    LBUFFER+="${text_to_add}"
+}
